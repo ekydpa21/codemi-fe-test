@@ -1,0 +1,8 @@
+.sidebar {
+  height: calc(100vh - 80px);
+  width: 20%;
+  border-right: hsl(0, 0, 0) 1px solid;
+  .menu {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+.sidebar {
+  height: calc(100vh - 80px);
+  width: 20%;
+  border-right: black 1px solid;
+}
+
+.sidebar .menu {
+  padding: 10px;
+}
+/*# sourceMappingURL=Sidebar.css.map */
