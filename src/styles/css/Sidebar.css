@@ -1,10 +1,13 @@
 .sidebar {
   height: calc(100vh - 80px);
-  width: 20%;
-  border-right: black 1px solid;
+  min-width: 12rem;
+  -webkit-box-shadow: 1.5px 1px 5px -2px;
+          box-shadow: 1.5px 1px 5px -2px;
+  position: fixed;
+  background: white;
 }
 
 .sidebar .menu {
-  padding: 10px;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=Sidebar.css.map */

@@ -1,3 +1,4 @@
+import HomeContent from "./components/HomeContent";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
@@ -5,7 +6,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Sidebar />
+      <div className="content">
+        <Sidebar />
+        <HomeContent />
+      </div>
     </div>
   );
 }

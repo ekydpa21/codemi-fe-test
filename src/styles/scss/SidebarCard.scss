@@ -1,0 +1,13 @@
+.sidebar-card {
+  padding: 10px 20px;
+  p {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  &.active {
+    color: hsl(124, 44%, 57%);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

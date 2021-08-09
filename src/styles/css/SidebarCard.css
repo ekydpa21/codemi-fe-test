@@ -1,0 +1,17 @@
+.sidebar-card {
+  padding: 10px 20px;
+}
+
+.sidebar-card p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.sidebar-card.active {
+  color: #61c268;
+}
+
+.sidebar-card:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=SidebarCard.css.map */
