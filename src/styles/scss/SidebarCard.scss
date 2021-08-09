@@ -1,5 +1,5 @@
 .sidebar-card {
-  padding: 10px 20px;
+  padding: 15px 20px;
   p {
     font-size: 1em;
     font-weight: 600;
@@ -9,5 +9,6 @@
   }
   &:hover {
     cursor: pointer;
+    background: hsla(0, 0%, 51%, 0.2);
   }
 }

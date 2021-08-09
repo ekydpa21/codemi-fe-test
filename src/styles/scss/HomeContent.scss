@@ -1,17 +1,42 @@
 .home-content {
   width: 100%;
+  min-height: calc(100vh - 80px);
   z-index: -2;
   padding: 30px;
   background: hsl(240, 4%, 95%);
   margin-left: 12rem;
   p {
+    width: max-content;
     font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 0.7rem;
+    border-bottom: 3px solid hsl(124, 44%, 57%);
   }
   .statistic {
+    margin: 2rem 0 2.5rem 0;
     img {
-      width: 100%;
+      width: 70%;
+    }
+  }
+  .date {
+    margin-bottom: 1.2rem;
+  }
+  .globalData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 10rem;
+    background: white;
+    .info {
+      width: 30%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .number {
+        font-size: 1.7em;
+        font-weight: 700;
+      }
     }
   }
 }

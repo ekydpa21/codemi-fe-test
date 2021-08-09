@@ -16,7 +16,7 @@ code {
   overflow: hidden !important;
 } */
 
-p {
+* {
   margin: 0;
 }
 

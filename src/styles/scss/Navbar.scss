@@ -29,16 +29,70 @@
       }
     }
     .profile {
-      display: flex;
-      align-items: center;
       margin-left: 20px;
-      .profile-picture {
-        height: 100%;
-        border-radius: 50%;
+      .user {
+        display: flex;
+        width: max-content;
+        .profile-picture {
+          height: 50px;
+          border-radius: 50%;
+        }
+        .arrow {
+          animation: arrowClose 0.5s;
+        }
+      }
+      .user-menu {
+        position: absolute;
+        width: 100px;
+        height: max-content;
+        background: hsl(0, 0, 100%);
+        margin-top: 0.5rem;
+        right: 2rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 3px -1px;
+        ul {
+          text-align: center;
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 10px;
+            &:hover {
+              background: hsla(0, 0, 70%, 0.5);
+            }
+          }
+        }
+        &.hidden {
+          visibility: hidden;
+        }
       }
       &:hover {
         cursor: pointer;
       }
+      &.active {
+        .arrow {
+          transform: rotate(180deg);
+          animation: arrowOpen 0.5s;
+          // animation: ;
+        }
+      }
     }
+  }
+}
+
+@keyframes arrowOpen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes arrowClose {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

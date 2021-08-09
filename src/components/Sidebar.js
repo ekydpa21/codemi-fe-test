@@ -3,7 +3,7 @@ import "../styles/css/Sidebar.css";
 import SidebarCard from "./SidebarCard";
 
 export default function Sidebar() {
-  const [nav] = useState(["HOME"]);
+  const [nav] = useState(["HOME", "ABOUT", "CONTACT"]);
   return (
     <div className="sidebar">
       <div className="menu">

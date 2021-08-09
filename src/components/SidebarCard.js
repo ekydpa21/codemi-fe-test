@@ -3,7 +3,7 @@ import "../styles/css/SidebarCard.css";
 
 export default function SidebarCard({ title }) {
   return (
-    <div className="sidebar-card active">
+    <div className={title === "HOME" ? "sidebar-card active" : "sidebar-card "}>
       <p>{title}</p>
     </div>
   );
